@@ -20,8 +20,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    print(f"[LOG] Отримано повідомлення від {message.author}: {message.content}")
-    
     if message.author == client.user:
         return
 
@@ -31,11 +29,8 @@ async def on_message(message):
 
         try:
             response = chatbot.query(full_prompt)
-            print(f"[LOG] Отримана відповідь: {response[:200]}...")
-
             await message.channel.send(f"{message.author.mention} {response}")
         except Exception as e:
-            print(f"[ERROR] Помилка при обробці запиту: {e}")
-            await message.channel.send("На жаль, зараз не можу відповісти.")
+            await message.channel.send(f"На жаль, зараз не можу відповісти. Помилка: {e}")
 
 client.run(os.getenv("DISCORD_TOKEN"))
