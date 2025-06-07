@@ -1,3 +1,5 @@
+# bot.py — UkrBot
+
 import discord
 from hugchat import ChatBot
 import os
@@ -15,6 +17,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    print(f"[LOG] Отримано повідомлення від {message.author}: {message.content}")  # 🔍 Лог отриманого повідомлення
+
     if message.author == client.user:
         return
 
@@ -22,10 +26,14 @@ async def on_message(message):
         query = message.content.replace(f"<@{client.user.id}>", "").strip()
         full_prompt = f"{PERSONALITY}\n\nЗапит: {query}"
 
+        print(f"[LOG] Обробляємо запит: {full_prompt}")  # 🔍 Лог запиту
+
         try:
             response = chatbot.query(full_prompt)
+            print(f"[LOG] Отримали відповідь: {response}")  # 🔍 Лог відповіді
             await message.channel.send(f"{message.author.mention} {response}")
         except Exception as e:
+            print(f"[ERROR] Помилка при обробці запиту: {e}")
             await message.channel.send("На жаль, зараз не можу відповісти.")
 
 client.run(os.getenv("DISCORD_TOKEN"))
