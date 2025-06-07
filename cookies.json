@@ -14,7 +14,7 @@
     },
     {
         "domain": ".huggingface.co",
-        "expirationDate": 1749635047,
+        "expirationDate": 1749635407,
         "hostOnly": false,
         "httpOnly": false,
         "name": "aws-waf-token",
@@ -23,20 +23,7 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "66084d89-5a14-4a4b-8775-cf15c29e2158:DQoAZEpCq0I9AAAA:Kwqul3noLpJIRhMinRXS484P3xPBABJMDDyzHQT2GdXrj375VghL/MWc7NPx9gvJTTLgkB2NaoHKEbwaBU414NqzDGT1l4ITX97URyVHaqt5LFUg9gEOPfP1Z99iLKsLgMEuq1l67mkg31y9MJD10WuLFjt7SeKxUhWhfSMEU1Q7WH8CPO0tsD6vBSk5eTT+AtvmtcBtJ0+O3+JUcWaL2OpQbaGPmKRKCIxJiD1z4APQIAp7Zn2No5qxRCm+UN38gKnEAbg0uxENq5sWmR8="
-    },
-    {
-        "domain": ".huggingface.co",
-        "expirationDate": 1749291082,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "__stripe_sid",
-        "path": "/",
-        "sameSite": "strict",
-        "secure": true,
-        "session": false,
-        "storeId": null,
-        "value": "d3ac44a0-cd40-48e4-9b0f-e9440fe11016775380"
+        "value": "66084d89-5a14-4a4b-8775-cf15c29e2158:DQoAbQFD+hUBAAAA:vw8DTxuR7vZid0lDSHkxvomyLuOeOV8457vLb9L4JgHCJko/VlORckK5Hz2hsPb//7PCJQ+9IUIqrylvVRDnFVPVc5R0eo/Bt6SHD5hatJ/Lx9Sxt+wOqIdopOzUOndY8pZFB88NmwELtWJ1nd/E6w3tS0IVfBgK27tYsamXSiufKWP/ltD+AmbdW4rtYuEUA7+0EiIHAXGW085jVysJxu3ecqLQ/uKKMvMMDwS0CIHWiARWnjnqmLnLLiNtXrl6bun+Veyp9gIPIyqNNrk="
     },
     {
         "domain": "huggingface.co",
