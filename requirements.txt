@@ -1,2 +1,2 @@
+git+https://github.com/SoulSen/hugchat-py.git 
 discord
-hugchat-wrapper
